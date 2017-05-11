@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>My Angular App!</title>
+
+    <title>Tapperiet</title>
+
+    <!-- needed for angular 2 routing -->
+    <base href="/">
 
     <!-- css -->
     <!-- load bootstrap and some simple css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <style>body { padding: 50px 0; }</style>
+    <link rel="stylesheet" href="style.css">
+
+
 
     <!-- js -->
     <!-- load polyfills and angular dependencies -->
@@ -25,8 +30,16 @@
     </script>
 </head>
 <body class="container">
+  <div class="logo_div">
+    <img class="logo" src="http://www.tapperiet.nu/files/sample/logo.png">
+  </div>
+
+  <div class="topbanner">
+    <img src="http://www.tapperiet.nu/files/topbanner15/LydSporiSneen.jpg">
+  </div>
+
 
     <my-app></my-app>
-    
+    <div class="footer"></div>
 </body>
 </html>

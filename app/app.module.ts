@@ -1,21 +1,36 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { appRouting } from './app.routing';
 import { AppComponent } from './app.component';
-import { FormsModule }   from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { AuthGuard } from './shared/guards/auth-guard.service';
+import { CanDeactivateGuard } from './shared/guards/can-deactivate-guard.service';
 import { HttpModule, JsonpModule } from '@angular/http';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
+    appRouting,
+    DashboardModule,
     HttpModule,
     JsonpModule
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    ContactComponent,
+    NotFoundComponent
   ],
-  bootstrap: [
-    AppComponent
-  ]
+  providers: [
+    AuthGuard,
+    CanDeactivateGuard
+  ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule {}

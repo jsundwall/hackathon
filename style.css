@@ -1,0 +1,122 @@
+body {
+  background-color: #221e1f;
+}
+
+.container {
+  width: 948px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.spacer {
+  margin-top: 50px;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.logo_div {
+  width: 100%;
+}
+
+.logo {
+  margin: auto;
+  display: block;
+  padding-top: 5px;
+}
+
+.content {
+  width: 948px;
+  margin-top: 10px;
+  /* background-image: url(http://www.tapperiet.nu/files/layout/main_background_repeat.jpg); */
+}
+
+.test {
+  position: relative;
+  top: -73px;
+  background-image: url(http://www.tapperiet.nu/files/layout/main_background_repeat.jpg);
+  z-index: 1;
+  padding-bottom: 73px;
+}
+
+.topbanner img {
+  width: 918px;
+}
+
+.menu {
+  width: 848px;
+  text-align: left;
+  vertical-align: top;
+  margin-left: 20px;
+  z-index: 5;
+  position: relative;
+}
+
+.menu_ul {
+  padding-top: 10px;
+  display: block;
+  height: 28px;
+  list-style-type: none;
+    z-index: 5;
+}
+
+.menu_li {
+  float: left;
+  padding-right: 10px;
+    z-index: 5;
+}
+
+.menu_li a {
+  color: white;
+  display: block;
+  background: #221e1f;
+  padding: 3px 10px 3px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+    z-index: 5;
+}
+
+.content_left{
+  display:inline-block;
+  margin-left: 50px;
+  width: 470px;
+  position: relative;
+  top: -1024px;
+}
+
+.content_right{
+  display: inline-block;
+  margin-left: 50px;
+  width: 334px;
+  position: relative;
+  top: 73px;
+}
+
+.news .date {
+  font-size: xx-small;
+}
+
+.news .title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #221e1f;
+  margin-bottom: 10px;
+}
+
+.news .news_image {
+  margin-top: 20px;
+  -webkit-text-stroke:
+}
+
+.news .news_subtext {
+  margin-top: 22px;
+}

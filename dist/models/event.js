@@ -6,4 +6,4 @@ var Event = (function () {
     return Event;
 }());
 exports.Event = Event;
-//# sourceMappingURL=test.js.map
+//# sourceMappingURL=event.js.map

@@ -1,0 +1,33 @@
+<div class="test">
+<div class="content_left">
+  <div class="news">
+    <div class="date">
+      <p>11-05-2017</p>
+    </div>
+    <div class="title">
+      <p>MODERN JAZZ DAYS 2017</p>
+    </div>
+    <div class="news_image">
+      <img src="http://www.tapperiet.nu/files/images/Store/2017/MJD17Stor.jpg">
+    </div>
+    <div class="news_subtext">
+      <div class="news_subtext_paragraph">
+        <p class="bold">FREDAG 19. MAJ KL. 18.00 </p>
+        <p class="bold">LØRDAG 20. MAJ KL. 16.30 </p>
+        <p class="bold">SØNDAG 21. MAJ KL. 12.00 </p>
+        <p class="bold">KØB BILLET HER </p>
+        <br>
+        Læs mere om Modern Jazz Days festivalen og se hele programmet på: <a href="www.modernjazzdays.dk">www.modernjazzdays.dk</a>  <br>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content_right">
+  <div class="calendar">
+    <div *ngFor="let item of events; let i = index">
+      <p *ngIf="i > 4">{{ item.name }}</p>
+      <a href="ticket"><img *ngIf="i > 4" src="{{ item.image }}" ></a>
+    </div>
+  </div>
+</div>
+</div>

@@ -8,8 +8,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var app_component_1 = require("./app.component");
 var forms_1 = require("@angular/forms");
+var dashboard_module_1 = require("./dashboard/dashboard.module");
+var app_routing_1 = require("./app.routing");
+var app_component_1 = require("./app.component");
+var home_component_1 = require("./home/home.component");
+var contact_component_1 = require("./contact/contact.component");
+var not_found_component_1 = require("./not-found/not-found.component");
+var auth_guard_service_1 = require("./shared/guards/auth-guard.service");
+var can_deactivate_guard_service_1 = require("./shared/guards/can-deactivate-guard.service");
 var http_1 = require("@angular/http");
 var AppModule = (function () {
     function AppModule() {
@@ -21,15 +28,22 @@ AppModule = __decorate([
         imports: [
             platform_browser_1.BrowserModule,
             forms_1.FormsModule,
+            app_routing_1.appRouting,
+            dashboard_module_1.DashboardModule,
             http_1.HttpModule,
             http_1.JsonpModule
         ],
         declarations: [
-            app_component_1.AppComponent
+            app_component_1.AppComponent,
+            home_component_1.HomeComponent,
+            contact_component_1.ContactComponent,
+            not_found_component_1.NotFoundComponent
         ],
-        bootstrap: [
-            app_component_1.AppComponent
-        ]
+        providers: [
+            auth_guard_service_1.AuthGuard,
+            can_deactivate_guard_service_1.CanDeactivateGuard
+        ],
+        bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
 exports.AppModule = AppModule;
